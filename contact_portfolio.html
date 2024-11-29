@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul-Emmanuel Buffe - Python & AI developer</title>
+    <link rel="stylesheet" href="style_portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Lien vers la feuille de style de la police Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<header class="header_contact">
+    <div class="topbar">
+        <h1>Paul-Emmanuel Buffe</h1>
+        <nav>
+            <a href="portfolio.html">Home</a>
+            <a href="portfolio.html#about">About Me</a>
+        </nav>
+    
+    </div>
+</header>
+<body>
+    <main>
+        <section class="contact">
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Contact Me</legend>
+                        <div class="part_1">
+                            <div>
+                            <label for="company">Company:</label>
+                            <input type="text" name= "company">
+                            </div>
+                            <div>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name= "prenom" placeholder="Ex. : Pierre">
+                            </div>
+                            <div>
+                            <label for="nom">Name:</label>
+                            <input type="text" name= "nom" placeholder="Ex. : Dupuis">
+                            </div>
+                        </div>    
+                        
+                        <div class="part_2">
+                            <div>
+                                <label for="email">Email Adress:</label>
+                                <input type="text" id="email" name= "email" placeholder="Ex. : Pierre.D@hotmail.com" >
+                            </div>
+                            <div>
+                                <label for="tel">Phone Number:</label>
+                                <input type="text" id="tel" name= "tel" placeholder="Ex. : 01.90.78.56.23" >
+                            </div>
+                        </div>
+                    
+                    <div class="part_3">
+                        <p>
+                        <label for="message">Your Message:</label><br>
+                        <textarea name="message"  rows="10" cols="100"></textarea>
+                        </p>
+    
+                        <button type="submit">Valider</button>
+                    </div>
+                </fieldset>    
+                    
+                        
+            </form>
+    
+</main>
+
+</body>
+</html>
