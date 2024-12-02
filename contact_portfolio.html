@@ -13,16 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header_contact">
-    <div class="topbar">
-        <h1>Paul-Emmanuel Buffe</h1>
-        <nav>
-            <a href="portfolio.html">Home</a>
-            <a href="portfolio.html#about">About Me</a>
-        </nav>
-    
-    </div>
-</header>
+    <header class="header_contact">
+        <div class="topbar">
+            <h1>Paul-Emmanuel Buffe</h1>
+            <nav>
+                <a href="portfolio.html">Home</a>
+                <a href="portfolio.html#about">About Me</a>
+            </nav>
+        
+        </div>
+    </header>
 
     <main>
         <section class="contact">
@@ -60,15 +60,16 @@
                         <label for="message">Your Message:</label><br>
                         <textarea name="message"  rows="10" cols="100"></textarea>
                         </p>
-    
-                        <button type="submit">Valider</button>
+                        <a href="mailto:paul-emmanuel.buffe@laplateforme.io?subject=Contact%20Form&body=Company:%20%5Bcompany%5D%0AFirst%20Name:%20%5Bprenom%5D%0AName:%20%5Bnom%5D%0AEmail:%20%5Bemail%5D%0APhone:%20%5Btel%5D%0AMessage:%20%5Bmessage%5D" onclick="this.href = this.href.replace('%5Bcompany%5D', document.getElementById('company').value).replace('%5Bprenom%5D', document.getElementById('first-name').value).replace('%5Bnom%5D', document.getElementById('nom').value).replace('%5Bemail%5D', document.getElementById('email').value).replace('%5Btel%5D', document.getElementById('tel').value).replace('%5Bmessage%5D', document.getElementById('message').value)">
+                        <button type="button">Valider</button>
+                        </a>
                     </div>
                 </fieldset>    
                     
                         
             </form>
     
-</main>
+    </main>
 
 </body>
 </html>
