@@ -25,6 +25,12 @@ header {
     padding: 20px;
 }
 
+
+.header_contact {
+    background-image: none;
+    height: 60px;
+} 
+
 h1 {
     font-size: x-large;
     font-weight: 500;
