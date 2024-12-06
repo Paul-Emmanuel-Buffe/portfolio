@@ -1,0 +1,274 @@
+/* Styles de base */
+body {
+    font-family: 'Poppins', sans-serif, Verdana, Tahoma, sans-serif;
+    background-color: #C0B4A0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #C0B4A0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(images_portfolio/fond_portfolio3.jpg) center/cover;
+    border-radius: 0 0 5px 5px;
+    height: 600px;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 10px;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(85, 99, 115, 0.5);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section Home */
+.home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about p {
+    width: 70%;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Section Contact */
+.contact form {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact legend, label, button {
+    color: black;
+}
+
+fieldset {
+    border-radius: 3px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.contact legend {
+    font-size: x-large;
+    text-align: center;
+}
+
+.part_1, .part_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#email, textarea, input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.part_3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: rgba(85, 99, 115);
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: medium;
+}
+
+.reseaux img {
+    margin: 3px;
+    height: 25px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        height: 400px;
+        text-align: center;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home_container {
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .coordonnees {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .part_1, .part_2 {
+        gap: 20px;
+    }
+
+    textarea, input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 250px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    .home_container, .coordonnees, .about, .contact form {
+        padding: 10px;
+        text-align: center;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+}
