@@ -184,7 +184,7 @@ footer nav {
 
 .reseaux img {
     margin: 3px;
-    height: 25px;
+    height: 35px;
 }
 
 /* Media Queries */
@@ -223,6 +223,7 @@ footer nav {
     header {
         height: 300px;
         padding: 10px;
+        margin-bottom: 130px;
     }
 
     h1 {
@@ -243,6 +244,7 @@ footer nav {
         max-width: 100%;
     }
 }
+
 
 @media (max-width: 480px) {
     header {
