@@ -110,23 +110,42 @@ nav a:hover {
     margin-bottom: 30px; /* Ajoute un espace de 20px en dessous de "Python & AI developer" */
 }
 
-.about {
+/* Structure globale de la section About */
+.about-me {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about p {
-    width: 70%;
-    margin-top: 20px;
-    text-align: justify;
+.title-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 40px; /* Space between title-image and text */
 }
 
-.about img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
+.title-image-container h2 {
+    margin-bottom: 10px;
+}
+
+.title-image-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* Optionnel : rend l'image circulaire */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    margin-top: 120px;
+}
+
+.text-content p, .text-content ul {
+    margin: 10px 0;
+    width: 100%; /* Utilise toute la largeur disponible */
 }
 
 /* Section Contact */
