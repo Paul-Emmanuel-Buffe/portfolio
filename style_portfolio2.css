@@ -1,9 +1,11 @@
 /* Styles de base */
+
 body {
     font-family: 'Poppins', sans-serif, Verdana, Tahoma, sans-serif;
     background-color: #C0B4A0;
     margin: 0;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -42,12 +44,19 @@ h2 {
     font-weight: 500;
 }
 
+/* Styles pour la topbar */
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(85, 99, 115, 0.5);
-    padding: 10px 20px;
+    padding: 2px 20px; /* Réduit le padding vertical pour diminuer la hauteur */
+    width: 100%;
+    position: fixed; /* Fixe la topbar en haut de l'écran */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur totale */
+    z-index: 1000; /* Assure que la topbar est au-dessus des autres éléments */
+    background-color: rgba(85, 99, 115, 0.5); /* Fond transparent */
 }
 
 nav {
@@ -70,15 +79,8 @@ nav a:hover {
 }
 
 /* Section Home */
-.home_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+.coordonnees p:first-of-type {
+    margin-bottom: -20px; /* Réduit l'espace de 20px entre les deux éléments */
 }
 
 .coordonnees {
@@ -87,8 +89,25 @@ nav a:hover {
     justify-content: space-between;
     width: 90%;
     font-weight: 500;
-    font-size: 1.2em;
-    margin: 20px 0;
+    font-size: 1.5em;
+    margin-bottom: -20px; /* Ajoutez cette ligne pour descendre de 10px */
+}
+
+.home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: flex-end; /* Aligne les éléments à la fin verticalement */
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur disponible */
+    gap: 30px;
+    text-align: center; /* Centre le texte */
+    margin-top: 10px; /* Descend tout le texte de 100px au total */
+}
+
+.home_container h2 {
+    font-size: 2.2em; /* Agrandit légèrement la taille du texte */
+    margin-bottom: 30px; /* Ajoute un espace de 20px en dessous de "Python & AI developer" */
 }
 
 .about {
